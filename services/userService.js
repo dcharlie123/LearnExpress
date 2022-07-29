@@ -7,6 +7,8 @@ const {
   CODE_ERROR,
   CODE_SUCCESS
 } = require('../utils/constant');
+
+
 function login(req, res, next) {
   const err = validationResult(req);
   if (!err.isEmpty()) {
